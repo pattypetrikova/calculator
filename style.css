@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* POZADI */
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./4373018.jpg);
+    background-size: cover;
+   
+}
+
+/* KALKULACKA */
+.calculator {
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+    /* border-radius: 15px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur( 8px );
+    overflow: hidden;
+}
+
+/* OBRAZOVKA KALKULACKY */
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: right;
+    height: 100px;
+    padding: 0 20px ;
+}
+
+input {
+    border: none;
+    outline:none;
+}
+
+
+/* TLACITKA */
+button {
+    height: 7rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.7s ease-out;
+}
+
+
+ /* KLAVESOVA SEKCE */
+ .keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+    padding: 1.5rem;
+ }
+
+/* ZNAMINKA OPERACI */
+.operator {
+    color: #94e6f5;
+  }
+
+.all-clear:hover {
+    color: rgb(255, 118, 255);
+}
+
+.equal {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    height: 100%;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.equal:hover {
+      color: turquoise;
+}
